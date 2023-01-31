@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+
+/* ---------- header ---------- */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/backgroundimg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header2 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    color:#AA336A;
+    font-size: 30px;
+    font-weight: bold;
+    text-indent: -70px;
+    line-height: 1.8;
+    padding: 10px 15%;
+    bottom: 470px;
+    position: relative;
+}
+
+.header-text span {
+    color:black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 340px;
+    height: 340px;
+    right: -100px;
+}
+
+.profile {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    top: -70px;
+    right: -760px;
+    border:1.5px solid #AA336A;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: -60px;
+    border:0.5px solid #AA336A;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #AA336A;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ---------- about ---------- */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    position: relative;
+    bottom: -80px;
+    margin-left: 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    color:#fff;
+    line-height: 1.2;
+    margin-left: 60px;
+}
+
+.col-2-title {
+    font-size:60px;
+    font-weight: 600;
+    line-height: 1.7;
+    color:grey;
+    text-align: center;
+}
+
+.about-category {
+    margin: 20px 0 40px;
+    line-height: 1.8;
+}
+
+.hobby-and-fun-fact {
+    color: darkolivegreen;
+    margin-right: 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hobbies {
+    display: flex;
+    margin-left: 50px;
+}
+
+.fun-facts {
+    display: flex;
+    margin-left: 50px;
+}
+
+.tft {
+    margin-left: 20px;
+    margin-right: 30px;
+    position: relative;
+    bottom: 80px;
+}
+
+/* ---------- Education ---------- */
+
+#education {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.education-col-2 {
+    flex-basis: 60%;
+    color:#fff;
+    line-height: 1.2;
+    margin-left: 60px;
+}
+
+.education-title {
+    font-size:60px;
+    font-weight: 600;
+    line-height: 1.7;
+    color:grey;
+    text-align: center;
+}
+
+.education-col-1 {
+    flex-basis: 35%;
+}
+
+.education-col-1 img {
+    position: relative;
+    bottom: -80px;
+    margin-left: 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.education-paragraph {
+    margin-right: 35px;
+}
+
+/* ---------- projects ---------- */
+
+.projects-col-1 {
+    flex-basis: 25%;
+}
+
+.projects-col-1 img {
+    position: relative;
+    bottom: -80px;
+    margin-left: 130px;
+    width: 70%;
+    border-radius: 15px;
+}
